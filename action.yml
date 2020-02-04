@@ -1,0 +1,9 @@
+# action.yml
+name: 'NPM Tests'
+description: 'Run npm tests'
+outputs:
+  time:
+    description: 'The time'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
