@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:12.14.1-alpine
 
 LABEL com.github.actions.name="Arslanbekov Denis"
 LABEL com.github.actions.description="Run npm eslint."
