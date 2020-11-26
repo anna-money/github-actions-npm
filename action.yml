@@ -1,12 +1,18 @@
-# action.yml
-name: 'NPM Tests'
-description: 'Run npm tests'
+name: 'NPM Target'
+description: 'Run npm target'
+inputs:
+  target:
+    description: 'package.json target to run'
+    required: true
+    default: 'test'
 outputs:
   time:
     description: 'The time'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.target }}
 branding:
-  icon: 'check-square'  
+  icon: 'check-square'
   color: 'orange'
