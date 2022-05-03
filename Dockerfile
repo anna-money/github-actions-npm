@@ -1,4 +1,4 @@
-FROM node:12.14.1-alpine
+FROM node:14.19.1-alpine
 
 LABEL com.github.actions.name="NPM Target"
 LABEL com.github.actions.description="Run npm target."
