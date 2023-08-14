@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/"
+    rebase-strategy: disabled
+    schedule:
+      interval: monthly
+    labels:
+      - dependencies
+      - docker
+    reviewers:
+      - "anna-money/sre-team"
